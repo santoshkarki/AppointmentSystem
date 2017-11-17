@@ -1,12 +1,13 @@
 # AppointmentSystem
 
 Technologies used:
-    PERL
+    PERL in back-end
+    Sqlite database
     Json,
     JQuery,
     HTML,
     bootstrap, 
-    Sqlite
+    
     
   1.Move "appointment folder" inside Apache/htdocs/.
   
