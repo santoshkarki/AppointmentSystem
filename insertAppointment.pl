@@ -38,32 +38,3 @@ $stmh->execute($date." ".$time, $description) or die $DBI::errstr;
 $dbh->disconnect();
 
 print '{"msg":"success"}';
-
-#use CGI;
-#use JSON;
-#
-#   $query = CGI->new();
-#
-#   $text = "";
-#
-##- Getting the request method
-#   $text .= "Request method = ".$query->request_method()."\n";
-#
-##- Getting input data from the query string and from the data content
-#   $text .= "Names and values from param():\n";
-#   @names = decode_json $query->param();
-#   foreach $name (@names) {
-#      $text .= "   $name = ".$query->param($name)."\n";
-#   }
-#
-##- Getting request headers
-#   $text .= "Names and values from http():\n";
-#   @names = $query->http();
-#   foreach $name (@names) {
-#      $text .= "   $name = ".$query->http($name)."\n";
-#   }
-#
-#   print $query->header();
-#   print $query->start_html(-title=>'CGI-pm-Request-Info.pl');
-#   print $query->pre($text);
-#   print $query->end_html();
