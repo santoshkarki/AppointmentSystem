@@ -132,7 +132,7 @@ $(document).ready(function() {
             success: function (res) {
                 if(res.msg === "success"){
                     updateTableData(data.txtDate, data.txtTime, data.txtDescription);
-					$("#sucess-alert").show();
+					$("#sucess-alert").show();			
 					
 				}
                 else
